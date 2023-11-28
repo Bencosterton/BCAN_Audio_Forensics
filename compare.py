@@ -34,6 +34,9 @@ new_data_file = 'C:\\Users\\benco\\Documents\\pyScripts\\ENFAnalaysis\\_sampled_
 known_database_file = 'C:\\Users\\benco\\Documents\\pyScripts\\ENFAnalaysis\\knowndata.csv'
 matching_dates = find_sequential_matching_dates(new_data_file, known_database_file)
 
-print("Matching Dates:")
-for date in matching_dates:
-    print(date)
+if matching_dates:
+    first_result = matching_dates[0]
+    last_result = matching_dates[-1]
+    print(f"Recording began at {first_result} and ended {last_result}")
+else:
+    print("No matching dates found.")
