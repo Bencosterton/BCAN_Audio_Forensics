@@ -1,6 +1,6 @@
 import pandas as pd
 
-def find_sequential_matching_dates(new_data_file, known_database_file, tolerance=0.005):
+def find_sequential_matching_dates(new_data_file, known_database_file, tolerance=0.003):
     sampled_data = pd.read_csv(new_data_file, header=None, names=['ENF'], dtype={'ENF': float})
     
     try:
