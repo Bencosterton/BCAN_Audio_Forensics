@@ -26,7 +26,7 @@ def sample_and_save_50Hz_data(audio_file_path, output_csv_file_path):
         csvwriter.writerow(['t', 'f'])
         csvwriter.writerows(data_to_save)
 
-audio_file_path = 'C:\\Users\\benco\\Documents\\pyScripts\\ENFAnalaysis\\input_file.wav'
-sampled_50Hz_data_csv_file_path = 'C:\\Users\\benco\\Documents\\pyScripts\\ENFAnalaysis\\output_file.csv'
+audio_file_path = 'path/to.file/input_file.wav'
+sampled_50Hz_data_csv_file_path = 'path/to/file/output_file.csv'
 
 sample_and_save_50Hz_data(audio_file_path, sampled_50Hz_data_csv_file_path)
