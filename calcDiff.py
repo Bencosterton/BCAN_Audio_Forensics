@@ -14,6 +14,6 @@ def add_difference_column(input_file_path, output_file_path):
     df.to_csv(output_file_path, index=False)
 
 # Example usage:
-input_file_path = '231010_1022.csv'
-output_file_path = '231010_1022_diff.csv'
+input_file_path = 'input.csv'
+output_file_path = 'output.csv'
 add_difference_column(input_file_path, output_file_path)
